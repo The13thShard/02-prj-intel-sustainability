@@ -4,7 +4,14 @@ img:not([src$=".svg"]) {
   display: block;
   width: 100%;
   max-width: 900px;
-  height: auto;
+  height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  img:not([src$=".svg"]) {
+    height: 220px;
+  }
 }
 
 header img {
