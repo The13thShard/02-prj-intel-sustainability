@@ -1,5 +1,12 @@
 /* Add your CSS here */
 
+img:not([src$=".svg"]) {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
 header img {
   display: block;
   width: 220px;
