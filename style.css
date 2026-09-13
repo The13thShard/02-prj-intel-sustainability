@@ -1,9 +1,19 @@
 /* Add your CSS here */
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 section img:not([src$=".svg"]) {
   display: block;
   width: 100%;
   max-width: 420px;
+  box-sizing: border-box;
   height: 220px;
   margin: 0 auto;
   object-fit: cover;
