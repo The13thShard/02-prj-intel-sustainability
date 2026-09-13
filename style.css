@@ -1,16 +1,17 @@
 /* Add your CSS here */
 
-img:not([src$=".svg"]) {
+section img:not([src$=".svg"]) {
   display: block;
   width: 100%;
-  max-width: 900px;
-  height: 320px;
+  max-width: 420px;
+  height: 220px;
+  margin: 0 auto;
   object-fit: cover;
 }
 
 @media (max-width: 600px) {
-  img:not([src$=".svg"]) {
-    height: 220px;
+  section img:not([src$=".svg"]) {
+    height: 180px;
   }
 }
 
