@@ -14,15 +14,7 @@ section img:not([src$=".svg"]) {
   width: 100%;
   max-width: 420px;
   box-sizing: border-box;
-  height: 220px;
   margin: 0 auto;
-  object-fit: cover;
-}
-
-@media (max-width: 600px) {
-  section img:not([src$=".svg"]) {
-    height: 180px;
-  }
 }
 
 header img {
