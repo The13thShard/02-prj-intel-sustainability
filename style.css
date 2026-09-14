@@ -69,7 +69,22 @@ section > div {
 
 @media (max-width: 600px) {
   section {
-    grid-template-columns: 1fr;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: none;
+    gap: 16px;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section > div {
+    min-width: 100vw;
+    width: 100vw;
+    margin-right: 12px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
   }
 }
 
@@ -116,5 +131,20 @@ header h1,
 header p,
 body > p {
   text-align: center;
+}
+
+.mobile-swipe-indicator {
+  display: none;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  margin: 0 auto 10px;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+  .mobile-swipe-indicator {
+    display: block;
+  }
 }
 
