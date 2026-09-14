@@ -59,6 +59,8 @@ section > div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -98,6 +100,22 @@ section img:not([src$=".svg"]) {
   margin: 0 auto 16px;
   border-radius: 10px;
   padding: 8px;
+}
+
+section > div > p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.25s ease, max-height 0.35s ease;
+  margin: 0;
+  padding: 0 6px;
+}
+
+section > div:hover > p,
+section > div:focus-within > p {
+  opacity: 1;
+  max-height: 220px;
+  margin-top: 8px;
 }
 
 section h2,
@@ -140,6 +158,12 @@ body > p {
   color: #4a4a4a;
   margin: 0 auto 10px;
   letter-spacing: 0.04em;
+}
+
+@media (min-width: 601px) {
+  .mobile-swipe-indicator {
+    display: none !important;
+  }
 }
 
 @media (max-width: 600px) {
