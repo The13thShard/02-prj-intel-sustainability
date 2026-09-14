@@ -17,6 +17,10 @@ section img:not([src$=".svg"]) {
   margin: 0 auto;
 }
 
+header {
+  text-align: center;
+}
+
 header img {
   display: block;
   width: 220px;
@@ -28,6 +32,10 @@ header img {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+header h1,
+header p {
+  text-align: center;
+}
 
 header p {
   font-family: Helvetica, Arial, sans-serif;
