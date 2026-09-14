@@ -53,11 +53,12 @@ section > div {
   background: #f4f6f8;
   border: 2px solid #dfe7ee;
   border-radius: 16px;
-  padding: 20px;
+  padding: 24px 24px 20px;
   margin: 0;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 @media (max-width: 900px) {
@@ -79,8 +80,21 @@ section img:not([src$=".svg"]) {
   max-width: 420px;
   object-fit: cover;
   box-sizing: border-box;
-  margin: 0 auto 12px;
+  margin: 0 auto 16px;
   border-radius: 10px;
+  padding: 8px;
+}
+
+section h2,
+section h3,
+section p {
+  margin-top: 0;
+}
+
+section h3,
+section p {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 header {
